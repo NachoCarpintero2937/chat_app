@@ -1,0 +1,21 @@
+
+ion-item{
+    padding:25px;
+    .btn_accion{
+        border-radius: 50px;
+        height: 36px;
+        border:1px solid #333;
+        .icon_success{
+    color:#1b5a1a;
+        }
+        .icon_delete{
+            color:#a81a1a;
+        }
+    }
+    .success{
+        border:1px solid #1b5a1a;
+    }
+    .delete{
+        border:1px solid  #a81a1a;
+    }
+}

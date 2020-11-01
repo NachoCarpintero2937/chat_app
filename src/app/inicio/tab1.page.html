@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ChatApp
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="solicitudes()">
+        <ion-icon name="people-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="_authSv.logout()">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header>
+      Tus contactos
+    </ion-list-header>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./assets/img/user.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Finn</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

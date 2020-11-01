@@ -1,0 +1,112 @@
+ion-content {
+    padding:0px!important;
+  }
+   .page-content{
+       --background: var(--ion-color-primary);
+   }
+  .background-header {
+      --background: (0, 0, 0, 0.5);
+  }
+  .img-logo {
+      width: 80px;
+  }
+  .login-gradrient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: .9;
+      // background: linear-gradient(to bottom, #797e9e, #0a171f);#1a3039
+  }
+  .logo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 20%;
+      .text_logo{
+          font-weight: 600;
+          color:white;
+          font-size: 21px;
+      }
+  }
+  ion-card.login {
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      flex-direction: column;
+      background: (0, 0, 0, 0.5);
+      box-shadow: none;
+      height: 55%;
+      border-radius: 20px;
+      padding: 10px;
+      .login_div{
+          height: 100%;
+      }
+      ion-card-header {
+  
+          ion-item {
+              --border-color: #ffff;
+          }
+  
+      }
+      ion-card-content{
+          width: 100%;
+      }
+      .label_input{
+          font-size: 13px;
+          color:white;
+      }
+  
+      .background-item {
+          --background: (0, 0, 0, 0.5);
+          color: #333;
+          margin: 0px 0px 20px 0px;
+      }
+      .row_button{
+          width: 100%;
+          .button-ingresar{
+              --border-radius: 5px;
+              --box-shadow: 0px 2px 7px #1a3039;
+              text-transform: unset;
+              margin:10px;
+          }
+          .col_button{
+              margin: 0px 10px 0px 10px;
+          }
+      }
+  
+  }
+  
+  :host {
+      ion-item {
+          // --border-color: #f7f7f7;
+          --highlight-color-invalid: red;
+          --highlight-color-valid: var(--ion-color-primary);
+      }
+  }
+  .icon_login{
+      font-size: 60px;
+  }
+  .bienvenidos_texto{
+    font-size: 20px;
+}
+
+.button_cuenta{
+    text-transform: inherit;
+    margin:10px;
+    --box-shadow: none;
+}
+.olvidaste_tu{
+    font-size: 12px;
+    text-transform: inherit;
+    margin:5px;
+    --box-shadow:none;
+}
+
+  
+  

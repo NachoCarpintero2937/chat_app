@@ -1,0 +1,37 @@
+.avatar_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 45px;
+        height: auto;
+    }
+}
+ion-title{
+    // padding-inline-start: 0px;
+}
+.col_perfil{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .label_nombre{
+        text-align: center;
+        font-size: 25px;
+    }
+    .perfil_imagen{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    }
+}
+.botones_accion{
+    display: flex;
+    justify-content: center;
+}
+
+.pendiente{
+    font-size: 15px;
+    border:1px solid #f1f1f1;
+    border-radius: 5px;
+    padding:5px;
+}

@@ -1,0 +1,60 @@
+<ion-content class="page-content">
+  <div class="logo background-header">
+    <div>
+      <ion-icon class="icon_login" color="white" name="chatbox-ellipses-outline"></ion-icon>
+    </div>
+    <div>
+      <ion-label class="text_logo">
+        ChatApp
+      </ion-label>
+    </div>
+  </div>
+  <ion-card class="login">
+    <div class="bienvenidos_texto" color="white">
+      Bienvenidos a ChatApp
+    </div>
+    <ion-card-content>
+      <form [formGroup]="form">
+        <ion-item>
+          <ion-label position="floating" color="white">Usuario</ion-label>
+          <ion-input formControlName="username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" color="white">Contraseña</ion-label>
+          <ion-grid class="ion-no-margin ion-no-padding" fixed="true">
+            <ion-row class="ion-align-items-center">
+              <ion-col class="ion-no-padding">
+                <ion-input clearOnEdit="false" formControlName="password"
+                  [type]="(type_password ? 'password' : 'text')">
+                </ion-input>
+              </ion-col>
+              <ion-col class="ion-no-padding" size="auto">
+                <ion-button (click)="passwordTypeToggle()" fill="clear">
+                  <ion-icon name="{{(type_password ? 'eye' : 'eye-off')}}"></ion-icon>
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-button color="white" class="olvidaste_tu">
+            ¿Olvidaste tu contraseña?
+          </ion-button>
+
+        </ion-item>
+      </form>
+    </ion-card-content>
+    <ion-row class="row_button">
+      <ion-col class="col_button">
+        <ion-button class="button-ingresar" expand="block" (click)="submit();">
+          Iniciar sesión
+        </ion-button>
+        <ion-button color="white" routerDirection="forward" [routerLink]="'/registrarse'" class="button_cuenta"
+          expand="block">
+          Registrarse
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+</ion-content>

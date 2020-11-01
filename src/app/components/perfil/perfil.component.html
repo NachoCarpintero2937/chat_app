@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-avatar slot="start" class="avatar_img">
+      <img src="./assets/img/user.png">
+    </ion-avatar> -->
+    <ion-title>
+      <ion-label>
+        {{usuario.nombre}} {{usuario.apellido}}
+      </ion-label>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-card-content>
+      <ion-col size="12" class="col_perfil">
+        <div class="perfil_imagen">
+          <ion-avatar>
+            <img src="./assets/img/user.png">
+          </ion-avatar>
+        </div>
+        <ion-label class="label_nombre" color="white">
+          {{usuario.nombre}} {{usuario.apellido}}
+        </ion-label>
+      </ion-col>
+      <div class="botones_accion">
+        <ion-button (click)="enviarSolicitud();" *ngIf="!solicitud_enviada">
+          <ion-icon name="person-add-outline"></ion-icon>
+        </ion-button>
+        <ng-container [ngSwitch]="solicitud_enviada">
+          <ion-label *ngSwitchCase="'PENDIENTE'" class="pendiente">
+            Pendiente
+          </ion-label>
+          <ion-button *ngSwitchCase="'ACEPTADA'">
+            <ion-icon name="person-add-outline"></ion-icon>
+          </ion-button>
+        </ng-container>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

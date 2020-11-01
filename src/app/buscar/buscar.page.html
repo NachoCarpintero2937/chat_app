@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Buscar contacto</ion-title>
+  </ion-toolbar>
+  <ion-searchbar placeholder="Buscar" (keyup)="buscar($event.target.value);" (ionClear)="cancel();">
+  </ion-searchbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let resultado of resultados" (click)="verUser(resultado)">
+    <ion-avatar slot="start">
+      <img src="./assets/img/user.png">
+    </ion-avatar>
+    <ion-label>
+      <h2>{{resultado.nombre}} {{resultado.apellido}}</h2>
+    </ion-label>
+  </ion-item>
+</ion-content>

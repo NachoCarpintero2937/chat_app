@@ -1,0 +1,13 @@
+{
+  "name": "ChatApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "",
+      "proxyUrl": "http://192.168.0.229/"
+    }
+  ]
+}
